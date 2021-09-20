@@ -12,6 +12,7 @@ agrupado = toy.groupby(['AGE'])
 agrupado = toy.groupby(['AGE']).size()
 display(agrupado)
 toy['AGE'].describe()
+srn.distplot(toy['AGE']).set_title('AGE')
 
 # outliers
 toy.loc[(toy['AGE'] < 0) | (toy['AGE'] > 120)]
