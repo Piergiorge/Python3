@@ -7,6 +7,7 @@ data = datasets.load_boston()
 toy = pd.DataFrame(data["data"], columns=data["feature_names"])
 display(toy)
 print(toy.shape)
+toy.describe()
 agrupado = toy.groupby(['AGE'])
 
 agrupado = toy.groupby(['AGE']).size()
